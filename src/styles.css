@@ -1,15 +1,204 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+:root {
+  --accent-color: rgb(31 41 55);
+  --background-color: rgb(250 250 250);
 }
 
 body {
-  height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #bada55, #c0ffee);
-  inset: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background-color);
+}
+
+header {
+  color: white;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 24px;
 }
 
 a {
-  transition: transform 1s
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header > a > img {
+  filter: invert(100%);
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+.hero {
+  height: 600px;
+  overflow: hidden;
+}
+
+.hero > img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 63%;
+  left: 0%;
+  padding: 16px 16px 32px 16px;
+  text-align: left;
+  color: white;
+  background-color: var(--accent-color);
+  width: 600px;
+  border-radius: 0 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-container > h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+.text-container > p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  width: 580px;
+  margin: 0;
+}
+
+.text-container > a {
+  margin-top: 16px;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--accent-color);
+  padding: 8px 16px;
+  width: 66px;
+}
+
+.last-episodes,
+.cast,
+.gallery {
+  padding: 16px 32px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.last-episodes > div {
+  gap: 40px;
+}
+
+.last-episodes > div > article > img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+
+.cast > div > article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cast > div > article > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+}
+
+.cast > div > article > span > h3,
+.cast > div > article > span > p {
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.gallery > div {
+  width: 600px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 16px;
+  justify-content: unset;
+  margin-bottom: 8px;
+}
+
+.gallery > div > picture > img {
+  height: 350px;
+  width: 600px;
+  object-fit: contain;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.gallery > span {
+  width: 70px;
+  height: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery > span > a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #aaa;
+  display: block;
+}
+
+.gallery > span > a:hover {
+  background-color: #888;
+}
+
+footer {
+  color: white;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 24px;
 }
