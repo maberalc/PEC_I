@@ -1,0 +1,35 @@
+/* Estilos para la etiqueta main */
+main {
+  max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Estilos para los títulos de las temporadas */
+h2 {
+  color: #333; /* Color del texto */
+  border-bottom: 2px solid #ccc; /* Línea de separación debajo del título */
+  padding-bottom: 5px; /* Espacio entre el título y la línea de separación */
+  margin-top: 20px; /* Espacio superior entre temporadas */
+}
+
+/* Estilos para la lista de capítulos */
+ul {
+  list-style-type: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el espacio interior de la lista */
+}
+
+/* Estilos para cada elemento de la lista de capítulos */
+li {
+  margin-bottom: 8px; /* Espacio entre cada elemento de la lista */
+}
+
+/* Estilos para los enlaces de los capítulos */
+a {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #0066cc; /* Color del enlace */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
