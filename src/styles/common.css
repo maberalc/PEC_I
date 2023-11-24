@@ -10,7 +10,16 @@ body {
   background-color: var(--background-color);
 }
 
+main {
+  margin-top: 56px !important;
+  margin-bottom: 56px !important;
+}
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   color: white;
   background-color: var(--accent-color);
   display: flex;
@@ -48,6 +57,10 @@ nav > ul > li {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   color: white;
   background-color: var(--accent-color);
   display: flex;
