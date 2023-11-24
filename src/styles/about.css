@@ -5,7 +5,12 @@ main {
 }
 
 h1 {
+  width: 100%;
   font-size: 22px;
+}
+
+h2 {
+  width: 100%;
 }
 
 .text-container {

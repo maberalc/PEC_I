@@ -140,3 +140,24 @@ div {
 .gallery > span > a:hover {
   background-color: #888;
 }
+
+@media only screen and (max-width: 1200px) {
+  .last-episodes > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cast > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: flex-start;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cast > div {
+    display: flex;
+    flex-direction: column;
+  }
+}

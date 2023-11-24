@@ -69,3 +69,7 @@ footer {
   height: 56px;
   padding: 0 24px;
 }
+
+footer > p {
+  width: 625px;
+}
