@@ -1,35 +1,31 @@
-/* Estilos para la etiqueta main */
 main {
-  max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
-  margin: 0 auto; /* Centra el contenido */
-  padding: 20px; /* Agrega espacio alrededor del contenido */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Estilos para los títulos de las temporadas */
 h2 {
-  color: #333; /* Color del texto */
-  border-bottom: 2px solid #ccc; /* Línea de separación debajo del título */
-  padding-bottom: 5px; /* Espacio entre el título y la línea de separación */
-  margin-top: 20px; /* Espacio superior entre temporadas */
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 20px;
 }
 
-/* Estilos para la lista de capítulos */
+
 ul {
-  list-style-type: none; /* Elimina los marcadores de lista */
-  padding: 0; /* Elimina el espacio interior de la lista */
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Estilos para cada elemento de la lista de capítulos */
 li {
-  margin-bottom: 8px; /* Espacio entre cada elemento de la lista */
+  margin-bottom: 8px;
 }
 
-/* Estilos para los enlaces de los capítulos */
 a {
-  text-decoration: none; /* Elimina el subrayado del enlace */
-  color: #0066cc; /* Color del enlace */
+  text-decoration: none;
+  color: #0066cc;
 }
 
 a:hover {
-  text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+  text-decoration: underline;
 }

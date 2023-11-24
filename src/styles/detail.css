@@ -1,0 +1,52 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article > h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+article > small {
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+article > img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+article > p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+article > h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+article > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article > ul > li {
+  margin-bottom: 8px;
+  color: #666;
+}
