@@ -13,6 +13,10 @@
   object-position: center;
 }
 
+.corazon-clip {
+  clip-path: url(#corazon);
+}
+
 .text-container {
   position: absolute;
   top: 63%;

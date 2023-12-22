@@ -25,3 +25,32 @@ article {
   justify-content: center;
   align-items: center;
 }
+
+.series_logo {
+  color: blueviolet;
+  transition: color 0.5s ease;
+  animation: cambioColor 8s infinite alternate;
+}
+
+.series_logo:hover {
+  color: black;
+  animation: none;
+}
+
+@keyframes cambioColor {
+  0% {
+    color: blueviolet;
+  }
+  25% {
+    color: mediumpurple;
+  }
+  50% {
+    color: purple;
+  }
+  75% {
+    color: rebeccapurple;
+  }
+  100% {
+    color: blueviolet;
+  }
+}

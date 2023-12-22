@@ -36,14 +36,18 @@ nav > ul > li > a {
   cursor: pointer;
   color: white;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 
 nav > ul > li > a:hover {
   text-decoration: underline;
+  font-size: 1.1rem;
 }
 
-header > a > img {
-  filter: invert(100%);
+header > a > img,
+footer > div > a > img {
+  object-fit: cover;
+  clip-path: circle(45%);
 }
 
 nav > ul {
@@ -69,10 +73,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   height: 56px;
   padding: 0 24px;
 }
 
+footer > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
 footer > p {
-  width: 625px;
+  max-width: 625px;
+}
+
+@media only screen and (max-width: 768px) {
+  header, footer {
+    height: 80px;
+    font-size: 1rem;
+  }
 }

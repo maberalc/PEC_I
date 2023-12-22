@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Cómo conocí a vuestra madre - Fan Site</title>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/main.css" />
     <script type="module" src="./js/gallery.js"></script>
   </head>
@@ -10,7 +11,12 @@
     <include src="src/components/header.html"></include>
     <main>
       <section class="hero">
-        <img src="/public/poster.webp" alt="Póster de la serie" height="500">
+        <img 
+          alt="Póster de la serie"
+          srcset="/public/poster.webp?width=400 1x,
+                  /public/poster.webp?width=800 2x"
+          src="/public/poster.webp" 
+          height="500">
         <div class="text-container">
           <h1>Cómo conocí a vuestra madre</h1>
           <p>Explorando los vínculos, risas y lecciones de vida en la búsqueda del amor: Tu guía definitiva de 'Cómo conocí a tu madre'</p>
@@ -26,7 +32,7 @@
             <p>Parte uno del episodio final de la serie <b>(T9E23)</b></p>
           </article>
           <article>
-            <img src="/public/ep208.jpg" alt="Episodio 208" height="300">
+            <img class="corazon-clip" src="/public/ep208.jpg?as=webp&width=800" type="image/webp" alt="Episodio 208" height="300">
             <h3>Juntos para siempre parte 2</h3>
             <p>Parte dos del episodio final de la serie <b>(T9E24)</b></p>
           </article>
@@ -100,6 +106,12 @@
         </span>
       </section>
     </main>
+    <svg>
+      <clipPath id="corazon" >
+        <path d="M 40,120 A 80,80 0,0,1 200,120 A 80,80 0,0,1 360,120 Q 360,240 200,360 Q 40,240 40,120 z" />
+      </clipPath>
+      <use clip-path="url(#corazon)" href="#corazon" fill="red" />
+    </svg>sh
     <include src="src/components/footer.html"></include>
   </body>
 </html>
