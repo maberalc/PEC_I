@@ -96,8 +96,8 @@ div {
   border: 1px solid var(--accent-color);
 }
 
-.cast > div > article > span > h3,
-.cast > div > article > span > p {
+.cast > div > article > div > h3,
+.cast > div > article > div > p {
   margin: 0;
 }
 
