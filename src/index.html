@@ -2,10 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de fans de la serie Cómo conocí a vuestra madre - Página principal">
     <title>Cómo conocí a vuestra madre - Fan Site</title>
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/main.css" />
-    <script type="module" src="./js/gallery.js"></script>
+    <script async type="module" src="./js/gallery.js"></script>
   </head>
   <body>
     <include src="src/components/header.html"></include>
@@ -13,9 +15,10 @@
       <section class="hero">
         <img 
           alt="Póster de la serie"
-          srcset="/public/poster.webp?width=400 1x,
-                  /public/poster.webp?width=800 2x"
+          srcset="/public/poster.webp?width=800 1x,
+                  /public/poster.webp?width=1800 2x"
           src="/public/poster.webp" 
+          fetchpriority="high"
           height="500">
         <div class="text-container">
           <h1>Cómo conocí a vuestra madre</h1>
@@ -42,35 +45,35 @@
         <h2>Reparto y personajes</h2>
         <div>
           <article>
-            <img src="/public/ted.jpg?as=webp" alt="Josh Radnor">
+            <img src="/public/ted.jpg?as=webp" loading="lazy" alt="Josh Radnor">
             <div>
               <h3>Ted Mosby</h3>
               <p>Josh Radnor</p>
             </div>
           </article>
           <article>
-            <img src="/public/barney.jpg?as=webp" alt="Neil Patrick Harris">
+            <img src="/public/barney.jpg?as=webp" loading="lazy" alt="Neil Patrick Harris">
             <div>
               <h3>Barney Stinson</h3>
               <p>Neil Patrick Harris</p>
             </div>
           </article>
           <article>
-            <img src="/public/robin.jpg?as=webp" alt="Cobie Smulders">
+            <img src="/public/robin.jpg?as=webp" loading="lazy" alt="Cobie Smulders">
             <div>
               <h3>Robin Scherbatsky</h3>
               <p>Cobie Smulders</p>
             </div>
           </article>
           <article>
-            <img src="/public/lily.jpg?as=webp" alt="Alyson Hannigan">
+            <img src="/public/lily.jpg?as=webp" loading="lazy" alt="Alyson Hannigan">
             <div>
               <h3>Lily Aldrin</h3>
               <p>Alyson Hannigan</p>
             </div>
           </article>
           <article>
-            <img src="/public/marshall.jpg?as=webp" alt="Jason Segel">
+            <img src="/public/marshall.jpg?as=webp" loading="lazy" alt="Jason Segel">
             <div>
               <h3>Marshall Eriksen</h3>
               <p>Jason Segel</p>
@@ -83,26 +86,26 @@
         <div>
           <picture id="gallery1">
             <source srcset="/public/gallery1.jpg?as=webp" type="image/webp">
-            <img src="/public/gallery1.jpg?as=webp" alt="Foto de grupo 1" height="400">
+            <img src="/public/gallery1.jpg?as=webp" loading="lazy" alt="Foto de grupo 1" height="400">
           </picture>
           <picture id="gallery2">
             <source srcset="/public/gallery2.jpg?as=webp" type="image/webp">
-            <img src="/public/gallery2.jpg?as=webp" alt="Foto de grupo 2" height="400">
+            <img src="/public/gallery2.jpg?as=webp" loading="lazy" alt="Foto de grupo 2" height="400">
           </picture>
           <picture id="gallery3">
             <source srcset="/public/gallery3.jpg?as=webp" type="image/webp">
-            <img src="/public/gallery3.jpg?as=webp" alt="Foto de grupo 3" height="400">
+            <img src="/public/gallery3.jpg?as=webp" loading="lazy" alt="Foto de grupo 3" height="400">
           </picture>
           <picture id="gallery4">
             <source srcset="/public/gallery4.webp" type="image/webp">
-            <img src="/public/gallery4.webp" alt="Foto de grupo 4" height="400">
+            <img src="/public/gallery4.webp" loading="lazy" alt="Foto de grupo 4" height="400">
           </picture>
         </div>
         <span>
-          <a href="#gallery1"></a>
-          <a href="#gallery2"></a>
-          <a href="#gallery3"></a>
-          <a href="#gallery4"></a>
+          <a href="#gallery1" aria-label="Foto 1 de la galería"></a>
+          <a href="#gallery2" aria-label="Foto 2 de la galería"></a>
+          <a href="#gallery3" aria-label="Foto 3 de la galería"></a>
+          <a href="#gallery4" aria-label="Foto 4 de la galería"></a>
         </span>
       </section>
     </main>
