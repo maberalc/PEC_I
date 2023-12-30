@@ -35,6 +35,11 @@ article > img {
   max-width: 100%;
   margin: 0 auto 15px auto;
   height: auto;
+  aspect-ratio: 737 / 414;
+
+  @media (max-width: 799px) {
+    aspect-ratio: 719 / 583;
+  }
 }
 
 article > p {
